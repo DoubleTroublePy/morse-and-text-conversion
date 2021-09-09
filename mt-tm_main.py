@@ -6,7 +6,7 @@ import re
 
 Diz = conversion()
 
-def defaultWindow():
+def defaultWindow() -> None:
     mt = 'morse to text'
     tm = 'text to morse'
     lenght = 500

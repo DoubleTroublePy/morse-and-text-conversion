@@ -43,7 +43,7 @@ class vocabolary:
     }
 
     #- convert morse code in char -
-    def msTxt(self, charatter):
+    def msTxt(self, charatter:str) -> str:
         regex = r"'(.a*)': '"+ str(charatter) +"'," #make a rege
         search = re.search(regex, str(self.switch)) #make a inverse research morse --> char
         if search != None: 
@@ -52,7 +52,7 @@ class vocabolary:
             return None
 
     #- convert char in to morse code -
-    def txtMs(self, charatter):
+    def txtMs(self, charatter:str) -> str:
         charatter = charatter.lower()
         return self.switch[charatter]
         

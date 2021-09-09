@@ -3,7 +3,7 @@ from vocabolary import vocabolary
 
 class conversion:
     #- convert text to morse code -
-    def txtMs(self, text, times = 1):
+    def txtMs(self, text:str, times:int = 1) -> str:
         voc = vocabolary() #call the constructor
         morse = ""
         text = str(text)
@@ -18,7 +18,7 @@ class conversion:
         return morse
 
     #- conversion morse to text -
-    def msTxt(self, morse, times = 1):
+    def msTxt(self, morse:str, times:int = 1) -> str:
         voc = vocabolary()#call the constructor
         morse += '  '
         morseBuffer = ''
